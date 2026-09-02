@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Scout Options</title>
+  <style>
+    body {
+      background: #18181b; color: #e4e4e7;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      margin: 0; padding: 32px; max-width: 480px;
+    }
+    h1 { font-size: 17px; font-weight: 600; color: #f4f4f5; margin: 0 0 20px; }
+    label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: #a1a1aa; margin-bottom: 6px; }
+    input {
+      width: 100%; background: #27272a; color: #e4e4e7; border: 1px solid #3f3f46;
+      border-radius: 6px; padding: 8px 10px; font-size: 13px; outline: none; box-sizing: border-box;
+    }
+    input:focus { border-color: #f59e0b; }
+    button {
+      margin-top: 14px; background: #f59e0b; color: #18181b; font-weight: 600;
+      border: none; border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer;
+    }
+    button:hover { background: #fbbf24; }
+    #status { margin-left: 12px; font-size: 12px; color: #a1a1aa; }
+    p.hint { font-size: 12px; color: #71717a; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Scout Options</h1>
+  <label for="serverUrl">Server URL</label>
+  <input id="serverUrl" type="url" placeholder="http://localhost:3000" />
+  <p class="hint">Where your Scout server is running (default http://localhost:3000).</p>
+  <button id="save">Save</button>
+  <span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>
